@@ -29,7 +29,7 @@ func SetupRouter(
 	api.GET("/health", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"success": true,
-			"message": "OK",
+			"status":  "OK",
 			"data": gin.H{
 				"version": "1.0.0",
 				"env":     "development",
